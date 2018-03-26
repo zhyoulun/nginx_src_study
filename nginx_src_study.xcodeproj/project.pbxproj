@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		B1086DC020636FF900C25255 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B1086DBF20636FF900C25255 /* main.c */; };
+		B1086DC92063767200C25255 /* ngx_palloc.c in Sources */ = {isa = PBXBuildFile; fileRef = B1086DC82063767200C25255 /* ngx_palloc.c */; };
+		B1086DCC2063768500C25255 /* ngx_array.c in Sources */ = {isa = PBXBuildFile; fileRef = B1086DCB2063768500C25255 /* ngx_array.c */; };
+		B1086DCF2063770D00C25255 /* ngx_alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = B1086DCE2063770D00C25255 /* ngx_alloc.c */; };
+		B1086DD220637F9100C25255 /* ngx_core.c in Sources */ = {isa = PBXBuildFile; fileRef = B1086DD120637F9100C25255 /* ngx_core.c */; };
+		B1CC9E722064B32B006C29A3 /* ngx_string.c in Sources */ = {isa = PBXBuildFile; fileRef = B1CC9E712064B32B006C29A3 /* ngx_string.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,17 @@
 /* Begin PBXFileReference section */
 		B1086DBC20636FF900C25255 /* nginx_src_study */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = nginx_src_study; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1086DBF20636FF900C25255 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		B1086DC6206370DC00C25255 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B1086DC72063710C00C25255 /* ngx_palloc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ngx_palloc.h; sourceTree = "<group>"; };
+		B1086DC82063767200C25255 /* ngx_palloc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ngx_palloc.c; sourceTree = "<group>"; };
+		B1086DCA2063768500C25255 /* ngx_array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ngx_array.h; sourceTree = "<group>"; };
+		B1086DCB2063768500C25255 /* ngx_array.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ngx_array.c; sourceTree = "<group>"; };
+		B1086DCD2063770D00C25255 /* ngx_alloc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ngx_alloc.h; sourceTree = "<group>"; };
+		B1086DCE2063770D00C25255 /* ngx_alloc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ngx_alloc.c; sourceTree = "<group>"; };
+		B1086DD020637F9100C25255 /* ngx_core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ngx_core.h; sourceTree = "<group>"; };
+		B1086DD120637F9100C25255 /* ngx_core.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ngx_core.c; sourceTree = "<group>"; };
+		B1CC9E702064B32B006C29A3 /* ngx_string.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ngx_string.h; sourceTree = "<group>"; };
+		B1CC9E712064B32B006C29A3 /* ngx_string.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ngx_string.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +57,7 @@
 		B1086DB320636FF900C25255 = {
 			isa = PBXGroup;
 			children = (
+				B1086DC6206370DC00C25255 /* .gitignore */,
 				B1086DBE20636FF900C25255 /* nginx_src_study */,
 				B1086DBD20636FF900C25255 /* Products */,
 			);
@@ -58,6 +75,16 @@
 			isa = PBXGroup;
 			children = (
 				B1086DBF20636FF900C25255 /* main.c */,
+				B1086DC72063710C00C25255 /* ngx_palloc.h */,
+				B1086DC82063767200C25255 /* ngx_palloc.c */,
+				B1086DCA2063768500C25255 /* ngx_array.h */,
+				B1086DCB2063768500C25255 /* ngx_array.c */,
+				B1086DCD2063770D00C25255 /* ngx_alloc.h */,
+				B1086DCE2063770D00C25255 /* ngx_alloc.c */,
+				B1086DD020637F9100C25255 /* ngx_core.h */,
+				B1086DD120637F9100C25255 /* ngx_core.c */,
+				B1CC9E702064B32B006C29A3 /* ngx_string.h */,
+				B1CC9E712064B32B006C29A3 /* ngx_string.c */,
 			);
 			path = nginx_src_study;
 			sourceTree = "<group>";
@@ -119,7 +146,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1086DCC2063768500C25255 /* ngx_array.c in Sources */,
+				B1086DC92063767200C25255 /* ngx_palloc.c in Sources */,
+				B1CC9E722064B32B006C29A3 /* ngx_string.c in Sources */,
+				B1086DD220637F9100C25255 /* ngx_core.c in Sources */,
 				B1086DC020636FF900C25255 /* main.c in Sources */,
+				B1086DCF2063770D00C25255 /* ngx_alloc.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
